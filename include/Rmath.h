@@ -65,10 +65,6 @@ using namespace std;
 # define HAVE_LOG1P 1
 #endif
 
-#ifndef HAVE_WORKING_LOG1P
-@RMATH_HAVE_WORKING_LOG1P@
-#endif
-
 #if !defined(HAVE_WORKING_LOG1P)
 /* remap to avoid problems with getting the right entry point */
 double  Rlog1p(double);
